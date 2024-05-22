@@ -14,25 +14,29 @@
   <title>Frontend Mentor | Meet landing page</title>
 </head>
 <body>
-  <header>
+  <header class="[ header ] [ gutter-top--md gutter-bottom--lg flex flex-center ]">
     <img src="./assets/logo.svg" alt="Meet">
   </header>
   <main>
-    <header>
+    <header class="introductory">
       <div>
-        <img src="./assets/desktop/image-hero-left.png" alt="Profiles Hero Left">
-        <div>
-          <div>
-            <h1>Group Chat for Everyone</h1>
-        <p>Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.</p>
+        <img src="./assets/desktop/image-hero-left.png" alt="Profiles Hero Left" class="img-hero-left">
+        <div class="[ introductory__content ] [ gutter-top--md ]">
+          <div class="[ gutter-bottom--md ]">
+            <h1 class="[ gutter-bottom--sm ]">Group Chat for Everyone</h1>
+        <p class="lede">Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.</p>
           </div>
-          <div>
-            <a href="#">Download v1.3</a>
+          <div class="[ introductory__cta ] [ flex flex-column flex-center ]">
+            <a href="#">Download <em>v1.3</em></a>
             <a href="#">What is it?</a>
           </div>
         </div>
-        <img src="./assets/desktop/image-hero-right.png" alt="Profiles Hero Right">
+        <img src="./assets/desktop/image-hero-right.png" alt="Profiles Hero Right" class="img-hero-right">
       </div>
+
+      <section class="divider" aria-label="first-section">
+        01
+      </section>
     </header>
 
     <section>
@@ -45,9 +49,13 @@
         <div>
           <strong>Built for modern use</strong>
           <h2>Smarter meetings, all in one place</h2>
-          <p>Send messages, share files, show your screen, and record your meetings — all in one 
+          <p class="lede">Send messages, share files, show your screen, and record your meetings — all in one 
             workspace. Control who can join with invite-only team access, data encryption, and data export.</p>
         </div>
+
+        <section class="divider" aria-label="first-section">
+          02
+        </section>
     </section>
 
     <footer>
