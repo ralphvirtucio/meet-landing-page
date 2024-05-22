@@ -1,3 +1,23 @@
+.flex {
+  display: flex;
+  gap: var(--gap-space);
+}
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+.flex-column {
+  flex-direction: column;
+}
+
+.grid {
+  display: grid;
+  gap: var(--gap-space);
+}
+.grid-col-two {
+  grid-template-columns: 1fr 1fr;
+}
+
 /**
   * A (more) Modern CSS reset by Andy Bell 
   * LINK --> https://piccalil.li/blog/a-more-modern-css-reset/
@@ -26,6 +46,12 @@ figure, blockquote, dl, dd {
 ul[role=list],
 ol[role=list] {
   list-style: none;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 /* Set core body defaults */
@@ -80,27 +106,27 @@ textarea:not([rows]) {
 .gutter-top--md {
   margin-block-start: 3rem;
 }
+.gutter-top--xl {
+  margin-block-start: 4rem;
+}
 
-.gutter-bottom--lg {
-  margin-block-end: 3.375rem;
+.gutter-bottom--sm {
+  margin-block-end: 1.5rem;
 }
 .gutter-bottom--md {
   margin-block-end: 2rem;
 }
-.gutter-bottom--sm {
-  margin-block-end: 1.5rem;
+.gutter-bottom--lg {
+  margin-block-end: 3.375rem;
 }
 
-.flex {
-  display: flex;
-  gap: var(--flow-space);
-}
-.flex-center {
-  align-items: center;
-  justify-content: center;
-}
-.flex-column {
-  flex-direction: column;
+.sr-only:not(:focus):not(:active):not(:focus-within) {
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
 body {
@@ -136,7 +162,7 @@ body {
   padding-inline: 1.5rem;
 }
 .introductory__cta {
-  --flow-space: 1rem;
+  --gap-space: 1rem;
 }
 .introductory__cta a {
   display: block;
@@ -159,6 +185,62 @@ body {
   background-color: #855FB1;
   color: #fff;
   padding-inline: 1.9rem;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-block: 4rem;
+}
+.divider::before {
+  content: "";
+  background-color: hsla(240, 10%, 57%, 0.25);
+  height: 84px;
+  width: 1px;
+}
+.divider p {
+  border: 1px solid hsla(240, 10%, 57%, 0.25);
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  color: #87879D;
+  font-weight: 900;
+}
+
+.hero {
+  padding-inline: 1.5rem;
+}
+.hero ul {
+  --gap-space: 1.5rem;
+}
+.hero ul img {
+  border-radius: 12px;
+}
+.hero-content {
+  text-align: center;
+  color: #87879D;
+}
+.hero-content strong {
+  color: #4D96A9;
+  text-transform: uppercase;
+  font-size: 900;
+  letter-spacing: 4px;
+}
+.hero-content #smarter-meetings {
+  margin-block-start: 1.5rem;
+  margin-block-end: 2rem;
+  color: #28283D;
+  font-size: clamp(1.9531rem, 1.7056rem + 1.2375vi, 2.6647rem);
+  font-weight: 900;
+}
+
+.footer {
+  background-color: #4D96A9;
+  color: #fff;
+  background-image: url(../../assets/mobile/image-footer.jpg);
+  background-size: cover;
 }
 
 /*# sourceMappingURL=styles.css.map */

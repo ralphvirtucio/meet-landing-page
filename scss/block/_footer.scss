@@ -1,0 +1,8 @@
+@use '../utility/variables' as *;
+
+.footer {
+  background-color: $primary-color-1;
+  color: $white;
+  background-image: url(../../assets/mobile/image-footer.jpg);
+  background-size: cover;
+}

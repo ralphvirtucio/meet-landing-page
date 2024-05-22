@@ -1,22 +1,24 @@
-
 .gutter-top {
   &--md {
     margin-block-start: 3rem;
   }
+
+  &--xl {
+    margin-block-start: 4rem;
+  }
 }
 
 .gutter-bottom {
-  &--lg {
-    margin-block-end: 3.375rem;
+  &--sm {
+    margin-block-end: 1.5rem;
   }
 
   &--md {
     margin-block-end: 2rem;
-
   }
 
-  &--sm {
-    margin-block-end: 1.5rem;
+  &--lg {
+    margin-block-end: 3.375rem;
   }
 
 }

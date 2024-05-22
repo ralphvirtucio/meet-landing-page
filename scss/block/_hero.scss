@@ -1,0 +1,33 @@
+@use '../utility/variables' as *;
+
+.hero {
+  padding-inline: 1.5rem;
+  ul {
+      --gap-space: 1.5rem;
+
+
+  img {
+    border-radius: 12px;
+  }
+  }
+
+  &-content {
+    text-align: center;
+    color: $neutral-color-2;
+
+    strong {
+      color: $primary-color-1;
+      text-transform: uppercase;
+      font-size: 900;
+      letter-spacing: 4px;
+    }
+
+    #smarter-meetings {
+      margin-block-start: 1.5rem;
+      margin-block-end: 2rem;
+      color: $neutral-color-1;
+      font-size: $step-3;
+      font-weight: 900;
+    }
+  }
+}

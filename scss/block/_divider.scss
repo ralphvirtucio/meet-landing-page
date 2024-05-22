@@ -1,0 +1,25 @@
+@use '../utility/variables' as *;
+
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-block: 4rem;
+
+  &::before {
+    content: "";
+    background-color: $divider-stroke-color;
+    height: 84px;
+    width: 1px;
+  }
+  
+  p {
+    border: 1px solid $divider-stroke-color;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    color: $neutral-color-2;
+    font-weight: 900;
+  }
+}
