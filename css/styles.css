@@ -192,7 +192,14 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+.divider-introductory {
   margin-block: 4rem;
+}
+.divider-hero-content {
+  margin-block-start: 4rem;
+  position: relative;
+  z-index: 2;
 }
 .divider::before {
   content: "";
@@ -207,6 +214,7 @@ body {
   border-radius: 50%;
   color: #87879D;
   font-weight: 900;
+  background-color: #fff;
 }
 
 .hero {
@@ -236,11 +244,53 @@ body {
   font-weight: 900;
 }
 
-.footer {
+.footer-wrapper {
   background-color: #4D96A9;
+  position: relative;
   color: #fff;
-  background-image: url(../../assets/mobile/image-footer.jpg);
+  height: 25rem;
+  margin-block-start: -1.75rem;
+  z-index: 1;
+}
+.footer-wrapper::before {
+  content: "";
+  background-image: url("../../assets//mobile/image-footer.jpg");
+  position: absolute;
   background-size: cover;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.2;
+  z-index: -1;
+}
+.footer-wrapper footer {
+  --gap-space: 1.5rem;
+  text-align: center;
+  padding-inline: 1.5rem;
+}
+.footer-wrapper footer h2 {
+  font-weight: 900;
+  font-size: clamp(1.9531rem, 1.7056rem + 1.2375vi, 2.6647rem);
+}
+.footer-wrapper footer .lede {
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+.footer-wrapper footer .btn--footer {
+  display: block;
+  margin-block-start: 0.5rem;
+  color: #fff;
+  text-decoration: none;
+  background-color: #855FB1;
+  padding-block: 1rem;
+  border-radius: 24px;
+  font-weight: 900;
+  padding-inline: 2.5rem;
+}
+.footer-wrapper footer .btn--footer em {
+  color: #D9B8FF;
+  font-style: normal;
 }
 
 /*# sourceMappingURL=styles.css.map */

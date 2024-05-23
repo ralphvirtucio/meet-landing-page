@@ -1,8 +1,60 @@
 @use '../utility/variables' as *;
 
 .footer {
-  background-color: $primary-color-1;
-  color: $white;
-  background-image: url(../../assets/mobile/image-footer.jpg);
-  background-size: cover;
+  &-wrapper {
+    background-color: $primary-color-1;
+    position: relative;
+    color: $white;
+    height: 25rem;
+    margin-block-start: -1.75rem;
+    z-index: 1;
+
+
+    &::before {
+      content: "";
+      background-image: url('../../assets//mobile/image-footer.jpg');
+      position: absolute;
+      background-size: cover;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      opacity: .2;
+      z-index: -1;
+    }
+
+    footer {
+      --gap-space: 1.5rem;
+      text-align: center;
+      padding-inline: 1.5rem;
+
+      h2 {
+        font-weight: 900;
+        font-size: $step-3;
+      }
+
+      .lede {
+        font-weight: 500;
+        font-size: 1.125rem;
+      }
+
+      .btn--footer {
+        display: block;
+        margin-block-start: .5rem;
+        color: $white;
+        text-decoration: none;
+        background-color: $primary-color-2;
+        padding-block: 1rem;
+        border-radius: 24px;
+        font-weight: 900;
+        padding-inline: 2.5rem;
+
+
+        em {
+          color: $btn-color-hover-2;
+          font-style: normal;
+        }
+      }
+    }
+  }
 }

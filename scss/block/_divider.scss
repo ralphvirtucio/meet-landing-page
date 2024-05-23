@@ -5,7 +5,16 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-block: 4rem;
+  
+  &-introductory {
+    margin-block: 4rem;
+  }
+
+  &-hero-content {
+    margin-block-start: 4rem;
+    position: relative;
+    z-index: 2;
+    }
 
   &::before {
     content: "";
@@ -21,5 +30,6 @@
     border-radius: 50%;
     color: $neutral-color-2;
     font-weight: 900;
+    background-color: $white;
   }
 }
