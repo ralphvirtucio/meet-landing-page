@@ -1,125 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/favicon-32x32.png" />
-    <link
-      rel="preconnect"
-      href="https://fonts.googleapis.com" />
-    <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
-      rel="stylesheet" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="stylesheet"
-      href="./css/styles.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet" />
 
-    <title>Frontend Mentor | Meet landing page</title>
-  </head>
-  <body>
-    <header class="[ header ] [ gutter-top--md gutter-bottom--lg flex flex-center ]">
-      <img
-        src="./assets/logo.svg"
-        alt="Meet" />
-    </header>
-    <main>
-      <div role="banner">
-        <div class="introductory">
-          <div>
-            <img
-              src="./assets/desktop/image-hero-left.png"
-              alt="Profiles Hero Left"
-              class="img-hero-left" />
-            <div class="[ introductory__content ] [ gutter-top--md ]">
-              <div class="[ gutter-bottom--md ]">
-                <h1 class="[ gutter-bottom--sm ]">Group Chat for Everyone</h1>
-                <p class="lede">
-                  Meet makes it easy to connect with others face-to-face virtually and
-                  collaborate across any device.
-                </p>
-              </div>
-              <div class="[ introductory__cta ] [ flex flex-column flex-center ]">
-                <a href="#">Download <em>v1.3</em></a>
-                <a href="#">What is it?</a>
-              </div>
-            </div>
-            <img
-              src="./assets/desktop/image-hero-right.png"
-              alt="Profiles Hero Right"
-              class="img-hero-right" />
-          </div>
+  <link rel="stylesheet" href="./css/styles.css" />
+
+  <title>Frontend Mentor | Meet landing page</title>
+</head>
+
+<body>
+  <header class="[ header ] [ gutter-top--md gutter-bottom--lg flex flex-center ]">
+    <img src="./assets/logo.svg" alt="Meet" />
+  </header>
+  <main>
+    <div role="banner">
+      <div class="introductory">
+        <div class="introductory__img">
+          <img src="./assets/tablet/image-hero.png" alt="Profiles of Person">
+        </div>
+        <div class="[ introductory__content ] [ gutter-top--md gutter-bottom--md ]">
+          <h1 class="[ gutter-bottom--sm ]">Group Chat for Everyone</h1>
+          <p class="lede">Meet makes it easy to connect with others face-to-face virtually and
+            collaborate across any device.</p>
         </div>
 
-        <div class="[ divider divider-introductory ]">
-          <h2 class="sr-only">Introductory Section</h2>
-          <p class="[ flex flex-center ]">01</p>
+        <div class="[ introductory__cta ] [ flex flex-column flex-center ]">
+          <a href="#">Download <em>v1.3</em></a>
+          <a href="#">What is it?</a>
         </div>
       </div>
-
-      <div
-        role="region"
-        aria-labelledby="smarter-meetings"
-        class="hero"
-      >
-        <ul class="[ grid grid-col grid-col-two ]">
-          <li>
-            <img
-              src="./assets/desktop/image-woman-in-videocall.jpg"
-              alt="Woman in image-woman-in-videocall" />
-          </li>
-          <li>
-            <img
-              src="./assets/desktop/image-women-videochatting.jpg"
-              alt="Women Video chatting" />
-          </li>
-          <li>
-            <img
-              src="./assets/desktop/image-men-in-meeting.jpg"
-              alt="Men in meeting" />
-          </li>
-          <li>
-            <img
-              src="./assets/desktop/image-man-texting.jpg"
-              alt="Man Texting" />
-          </li>
-        </ul>
-        <div class=" [ hero-content ] [ flex flex-column gutter-top--xl ]">
-            <strong>Built for modern use</strong>
-            <h2 id="smarter-meetings">Smarter meetings, all in one place</h2>
-            <p class="lede">
-              Send messages, share files, show your screen, and record your meetings — all
-              in one workspace. Control who can join with invite-only team access, data
-              encryption, and data export.
-            </p>
-        </div>
-        <div class="[ divider divider-hero-content ]">
-          <h2 class="sr-only">Main Content Section</h2>
-          <p class="[ flex flex-center ]">02</p>
-        </div>
-      </div>
-    </main>
-
-    <div class="[ footer-wrapper ] [ flex flex-center]">
-      <footer class="[ flex flex-column flex-center ]">
-        <h2>Experience more together</h2>
-        <p class="lede">
-          Stay connected with reliable HD meetings and unlimited one-on-one and group video
-          sessions.
-        </p>
-        <a href="#" class="btn--footer">Download <em>v1.3</em></a>
-      </footer>
     </div>
-  </body>
+
+    <div class="[ divider divider-introductory ]">
+      <h2 class="sr-only">Introductory Section</h2>
+      <p class="[ flex flex-center ]">01</p>
+    </div>
+    </div>
+
+    <div role="region" aria-labelledby="smarter-meetings" class="hero">
+      <ul class="[ grid grid-col grid-col-two ]">
+        <li>
+          <img src="./assets/desktop/image-woman-in-videocall.jpg" alt="Woman in image-woman-in-videocall" />
+        </li>
+        <li>
+          <img src="./assets/desktop/image-women-videochatting.jpg" alt="Women Video chatting" />
+        </li>
+        <li>
+          <img src="./assets/desktop/image-men-in-meeting.jpg" alt="Men in meeting" />
+        </li>
+        <li>
+          <img src="./assets/desktop/image-man-texting.jpg" alt="Man Texting" />
+        </li>
+      </ul>
+      <div class=" [ hero-content ] [ flex flex-column gutter-top--xl ]">
+        <strong>Built for modern use</strong>
+        <h2 id="smarter-meetings">Smarter meetings, all in one place</h2>
+        <p class="lede">
+          Send messages, share files, show your screen, and record your meetings — all
+          in one workspace. Control who can join with invite-only team access, data
+          encryption, and data export.
+        </p>
+      </div>
+      <div class="[ divider divider-hero-content ]">
+        <h2 class="sr-only">Main Content Section</h2>
+        <p class="[ flex flex-center ]">02</p>
+      </div>
+    </div>
+  </main>
+
+  <div class="[ footer-wrapper ] [ flex flex-center]">
+    <footer class="[ flex flex-column flex-center ]">
+      <h2>Experience more together</h2>
+      <p class="lede">
+        Stay connected with reliable HD meetings and unlimited one-on-one and group video
+        sessions.
+      </p>
+      <a href="#" class="btn--footer">Download <em>v1.3</em></a>
+    </footer>
+  </div>
+</body>
+
 </html>
