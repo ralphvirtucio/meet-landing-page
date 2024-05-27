@@ -240,7 +240,7 @@ body {
 }
 .footer-wrapper::before {
   content: "";
-  background-image: url("../../assets//mobile/image-footer.jpg");
+  background-image: url("/assets/mobile/image-footer.jpg");
   position: absolute;
   background-size: cover;
   top: 0;
@@ -252,7 +252,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .footer-wrapper::before {
-    background-image: url("../../assets/tablet/image-footer.jpg");
+    background-image: url("/assets/tablet/image-footer.jpg");
   }
 }
 .footer-wrapper footer {
