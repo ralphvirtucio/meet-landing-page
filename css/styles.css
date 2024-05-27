@@ -136,6 +136,8 @@ body {
 
 .introductory__content {
   text-align: center;
+  max-inline-size: 45ch;
+  margin-inline: auto;
 }
 .introductory__content h1 {
   color: #28283D;
@@ -149,6 +151,12 @@ body {
 }
 .introductory__cta {
   --gap-space: 1rem;
+  margin-inline: auto;
+}
+@media (min-width: 48em) {
+  .introductory__cta {
+    flex-direction: row;
+  }
 }
 .introductory__cta a {
   display: block;
@@ -157,6 +165,12 @@ body {
   flex: 1;
   text-decoration: none;
   font-weight: 900;
+  text-align: center;
+}
+@media (min-width: 48em) {
+  .introductory__cta a {
+    flex: 0 1 auto;
+  }
 }
 .introductory__cta a:nth-child(1) {
   background-color: #4D96A9;
@@ -209,6 +223,11 @@ body {
 .hero ul {
   --gap-space: 1.5rem;
 }
+@media (min-width: 48em) {
+  .hero ul {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 .hero ul img {
   border-radius: 12px;
 }
@@ -219,15 +238,20 @@ body {
 .hero-content strong {
   color: #4D96A9;
   text-transform: uppercase;
-  font-size: 900;
+  font-weight: 900;
   letter-spacing: 4px;
 }
 .hero-content #smarter-meetings {
-  margin-block-start: 1.5rem;
+  margin-block-start: clamp(1rem, 0.9565rem + 0.2174vi, 1.125rem);
   margin-block-end: 2rem;
   color: #28283D;
   font-size: clamp(1.9531rem, 1.7056rem + 1.2375vi, 2.6647rem);
   font-weight: 900;
+}
+.hero-content .lede {
+  max-inline-size: 54ch;
+  margin-inline: auto;
+  font-size: 500;
 }
 
 .footer-wrapper {
