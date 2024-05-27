@@ -4,6 +4,11 @@
 
 .introductory {
 
+  &__img {
+    img {
+    margin-inline: auto;
+    }
+  }
 
   &__content {
     text-align: center;

@@ -8,6 +8,8 @@
 
       @include tablet {
         grid-template-columns: repeat(4, 1fr);
+      --gap-space: 0.6875rem;
+
       }
 
 

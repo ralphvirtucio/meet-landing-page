@@ -134,6 +134,9 @@ body {
   background-color: #FAFAFA;
 }
 
+.introductory__img img {
+  margin-inline: auto;
+}
 .introductory__content {
   text-align: center;
   max-inline-size: 45ch;
@@ -226,6 +229,7 @@ body {
 @media (min-width: 48em) {
   .hero ul {
     grid-template-columns: repeat(4, 1fr);
+    --gap-space: 0.6875rem;
   }
 }
 .hero ul img {
@@ -262,6 +266,11 @@ body {
   margin-block-start: -1.75rem;
   z-index: 1;
 }
+@media (min-width: 48em) {
+  .footer-wrapper {
+    height: 32rem;
+  }
+}
 .footer-wrapper::before {
   content: "";
   background-image: url("/assets/mobile/image-footer.jpg");
@@ -291,6 +300,7 @@ body {
 .footer-wrapper footer .lede {
   font-weight: 500;
   font-size: 1.125rem;
+  max-width: 48ch;
 }
 .footer-wrapper footer .btn--footer {
   display: block;
