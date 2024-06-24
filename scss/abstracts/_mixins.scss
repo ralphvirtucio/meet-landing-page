@@ -1,0 +1,47 @@
+@import './variables';
+
+/*----------------------------
+	Visually hidden
+----------------------------*/
+@mixin sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+/*----------------------------
+	Visually hidden
+----------------------------*/
+
+/**
+  * Breakpoint mixins reference: https://dev.to/oler/using-mixins-with-scss-to-create-breakpoints-8g6
+     Example Usage
+  *  1. @include breakpoint(small)
+  *  2. @include breakpoint(medium)
+  *  3. @include breakpoint(large)
+  *   {
+  *   properties content
+  * }
+  */
+
+
+@mixin breakpoint($point) {
+  @if $point == small {
+    @media (min-width: map-get($breakpoints, 'sm')) {@content;}
+  }
+  @else if $point == medium {
+    @media (min-width: map-get($breakpoints, 'md')) { @content; }
+  }
+  @else if $point == large {
+    @media (min-width: map-get($breakpoints, 'lg')) { @content; }
+  }
+}
+
+// ------------- Breakpoint mixins end

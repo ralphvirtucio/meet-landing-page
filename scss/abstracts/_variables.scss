@@ -1,0 +1,46 @@
+
+
+$primary-color-1: #4D96A9;
+$primary-color-2: #855FB1;
+$primary-color-3: #28283D;
+
+$secondary-color-1: #8FE3F9;
+$secondary-color-2: #D9B8FF;
+
+$neutral-color-1: #87879D;
+$neutral-color-2: #FAFAFA;
+
+$font-base-size: 1rem;
+
+$main-font: "Red Hat Display", sans-serif;
+
+$fs-large: 4rem;
+$fs-medium: 2.5rem;
+$fs-body: 1.125rem;
+
+$line-height-lg: 4rem;
+$line-height-md: 2.75rem;
+$line-height-sm: 1.625rem;
+
+$character-space: 4px;
+
+$text-width-long: 75ch;
+$text-width-short: 60ch;
+$text-width-compact: 40ch;
+
+
+$breakpoints: (
+  sm: 36em,
+  md: 48em,
+  lg: 62em
+  );
+
+
+$size-scale: (
+  '300': $font-base-size * 0.8,
+  '400': $font-base-size,
+  '500': $font-base-size * 1.25,
+  '600': $font-base-size * 1.6,
+  '700': $font-base-size * 2,
+  '900': $font-base-size * 3
+)
