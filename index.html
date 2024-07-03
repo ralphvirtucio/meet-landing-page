@@ -21,26 +21,108 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="./css/styles.css" />
     <title>Frontend Mentor | Meet landing page</title>
   </head>
   <body>
-    <!-- Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.
+    <header class="header">
+      <img
+        class="header__logo"
+        src="./assets/logo.svg"
+        alt="Meet" />
+    </header>
+    <main class="main">
+      <section class="landing__page--one">
+        <div class="hero__img">
+          <picture>
+            <source
+              media="(min-width: 48em)"
+              srcset="./assets/desktop/image-hero-left.png" />
+            <img
+              src="./assets/tablet/image-hero.png"
+              alt="Profiles of Persons" />
+          </picture>
+        </div>
+        <div class="content">
+          <h1 class="heading__main">Group Chat for everyone</h1>
+          <p class="pele">
+            Meet makes it easy to connect with others face-to-face virtually and
+            collaborate across any device.
+          </p>
+        </div>
+        <div class="cta">
+          <a
+            href="#"
+            class="btn__link btn__download"
+            >Download
+            <span>v1.3</span>
+          </a>
+          <a
+            href="#"
+            class="btn__link btn__more-info"
+            >What is it</a
+          >
+        </div>
+        <div class="step__indicator">
+          <p>Section 01</p>
+          <em>01</em>
+        </div>
+      </section>
+      <section class="landing__page--two">
+        <ul
+          role="list"
+          class="features">
+          <li>
+            <img
+              src="./assets/desktop/image-woman-in-videocall.jpg"
+              alt="Woman in image-woman-in-videocall" />
+          </li>
+          <li>
+            <img
+              src="./assets/desktop/image-women-videochatting.jpg"
+              alt="Woman videochatting" />
+          </li>
+          <li>
+            <img
+              src="./assets/desktop/image-men-in-meeting.jpg"
+              alt="Men in meeting" />
+          </li>
+          <li>
+            <img
+              src="./assets/desktop/image-man-texting.jpg"
+              alt="Man texting" />
+          </li>
+        </ul>
+        <div class="content">
+          <strong class="tag-line">Built for Modern use</strong>
+          <h2 class="heading__secondary">Smarter meetings, all in one place</h2>
+          <p class="pele">
+            Send messages, share files, show your screen, and record your meetings — all
+            in one workspace. Control who can join with invite-only team access, data
+            encryption, and data export.
+          </p>
+        </div>
+        <div class="step__indicator">
+          <p>Section 02</p>
+          <em>02</em>
+        </div>
+      </section>
+    </main>
 
-  Download v1.3
-  What is it?
-
-  01
-  Built for modern use
-
-  Smarter meetings, all in one place
-
-  Send messages, share files, show your screen, and record your meetings — all in one 
-  workspace. Control who can join with invite-only team access, data encryption, and data export.
-
-  02
-  Experience more together
-  Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.
-
-  Download v1.3 -->
+    <footer class="footer">
+      <h3 class="heading__tertiary">Experience more together</h3>
+      <p class="pele">
+        Stay connected with reliable HD meetings and unlimited one-on-one and group video
+        sessions.
+      </p>
+      <a
+        href="#"
+        class="btn__link btn__download"
+        >Download
+        <span>v1.3</span>
+      </a>
+    </footer>
   </body>
 </html>
