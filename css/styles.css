@@ -119,6 +119,33 @@ select {
 .btn__link {
   text-decoration: none;
   color: #87879D;
+  font-weight: 900;
+  display: inline-block;
+  color: #FAFAFA;
+  line-height: 1.625rem;
+  border-radius: 30px;
+}
+
+.btn__download {
+  background-color: #4D96A9;
+  padding-block: 1rem;
+  padding-inline: 2.5rem;
+}
+.btn__download span {
+  color: #8FE3F9;
+}
+
+.footer .btn__download {
+  background-color: #855FB1;
+}
+.footer span {
+  color: #D9B8FF;
+}
+
+.btn__more-info {
+  background-color: #855FB1;
+  padding-inline: 2rem;
+  padding-block: 1rem;
 }
 
 body {
