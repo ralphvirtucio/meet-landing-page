@@ -1,0 +1,17 @@
+.grid {
+  display: grid;
+
+  &.features {
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+    row-gap: 1.5rem;
+    column-gap: 1.5rem;
+    margin-block-end: 4rem;
+
+    li img {
+      border-radius: 8px;
+    }
+
+  }
+}
+

@@ -3,3 +3,19 @@
 body {
   font-family: $main-font;
 }
+
+.visually-hidden {
+  @include sr-only;
+}
+
+.landing__page {
+
+  // &--one {
+  //   padding-inline: 1.5rem;
+  // }
+
+  &--two {
+    padding-inline: 1.5rem;
+  }
+
+}
