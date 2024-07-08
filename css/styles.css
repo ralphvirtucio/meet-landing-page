@@ -149,15 +149,29 @@ select {
 }
 
 .step__indicator {
-  background-color: transparent;
-  border: 1px solid #88889e;
+  background-color: white;
+  border: 1px solid hsla(240, 10%, 57%, 0.25);
   display: flex;
+  justify-content: center;
   align-items: center;
   color: #87879D;
   width: 50px;
   height: 50px;
   border-radius: 50%;
   padding: 1rem;
+  position: relative;
+  margin-block-start: 9.25rem;
+  margin-block-end: 4rem;
+}
+.step__indicator::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 23px;
+  background-color: hsla(240, 10%, 57%, 0.25);
+  width: 1px;
+  height: 84px;
+  right: -23px;
 }
 .step__indicator em {
   font-style: normal;
@@ -182,8 +196,12 @@ body {
   white-space: nowrap !important;
 }
 
+.landing__page--one {
+  text-align: center;
+}
 .landing__page--two {
   padding-inline: 1.5rem;
+  text-align: center;
 }
 
 .flex-col-center {
