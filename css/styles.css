@@ -196,12 +196,36 @@ body {
   white-space: nowrap !important;
 }
 
+.header {
+  padding-block-start: 2.875rem;
+  padding-block-end: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .landing__page--one {
   text-align: center;
+}
+.landing__page--one .content {
+  margin-block-start: 3.5rem;
+  margin-block-end: 2rem;
+  padding-inline: 1.5rem;
+}
+.landing__page--one .content .heading__main {
+  max-inline-size: 10ch;
+  margin-inline: auto;
+}
+.landing__page--one .content .pele {
+  margin-block-start: 1rem;
 }
 .landing__page--two {
   padding-inline: 1.5rem;
   text-align: center;
+}
+.landing__page--two .content .heading__secondary {
+  margin-block-start: 1.5rem;
+  margin-block-end: 2rem;
 }
 
 .flex-col-center {
