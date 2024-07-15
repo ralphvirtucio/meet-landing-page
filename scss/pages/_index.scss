@@ -1,4 +1,7 @@
 @use '../abstracts' as *;
+@forward './header.scss'; 
+@forward './main.scss'; 
+@forward './footer.scss'; 
 
 body {
   font-family: $main-font;
@@ -6,49 +9,4 @@ body {
 
 .visually-hidden {
   @include sr-only;
-}
-
-.header {
-  padding-block-start: 2.875rem;
-  padding-block-end: 3.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.landing__page {
-
-  &--one {
-    text-align: center;
-
-    .content {
-      margin-block-start: 3.5rem;
-      margin-block-end: 2rem;
-      padding-inline: 1.5rem;
-
-      .heading__main {
-        max-inline-size: 10ch;
-        margin-inline: auto;
-      }
-
-      .pele {
-        margin-block-start: 1rem;
-      }
-    }
-
-  }
-
-  &--two {
-    padding-inline: 1.5rem;
-    text-align: center;
-
-    .content {
-      
-      .heading__secondary {
-        margin-block-start: 1.5rem;
-        margin-block-end: 2rem;
-      }
-    }
-  }
-
 }

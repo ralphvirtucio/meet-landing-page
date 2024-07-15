@@ -106,7 +106,7 @@ select {
   letter-spacing: 4px;
   font-weight: 900;
 }
-.content .pele {
+.content .lede {
   color: #87879D;
   font-weight: 500;
   line-height: 1.625rem;
@@ -114,6 +114,8 @@ select {
 
 .heading__tertiary {
   color: #FAFAFA;
+  font-size: 2rem;
+  line-height: 36px;
 }
 
 .btn__link {
@@ -162,6 +164,7 @@ select {
   position: relative;
   margin-block-start: 9.25rem;
   margin-block-end: 4rem;
+  z-index: 2;
 }
 .step__indicator::before {
   content: "";
@@ -176,24 +179,6 @@ select {
 .step__indicator em {
   font-style: normal;
   font-weight: 900;
-}
-
-body {
-  font-family: "Red Hat Display", sans-serif;
-}
-
-.visually-hidden {
-  border: 0 !important;
-  clip: rect(1px, 1px, 1px, 1px) !important;
-  -webkit-clip-path: inset(50%) !important;
-  clip-path: inset(50%) !important;
-  height: 1px !important;
-  margin: -1px !important;
-  overflow: hidden !important;
-  padding: 0 !important;
-  position: absolute !important;
-  width: 1px !important;
-  white-space: nowrap !important;
 }
 
 .header {
@@ -216,7 +201,7 @@ body {
   max-inline-size: 10ch;
   margin-inline: auto;
 }
-.landing__page--one .content .pele {
+.landing__page--one .content .lede {
   margin-block-start: 1rem;
 }
 .landing__page--two {
@@ -226,6 +211,57 @@ body {
 .landing__page--two .content .heading__secondary {
   margin-block-start: 1.5rem;
   margin-block-end: 2rem;
+}
+
+.footer {
+  background-color: #4D96A9;
+  color: #FAFAFA;
+  position: relative;
+  height: 28rem;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-block-start: -5.75rem;
+}
+.footer::before {
+  content: "";
+  background-image: url("/assets/mobile/image-footer.jpg");
+  position: absolute;
+  background-size: cover;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.2;
+  z-index: -1;
+}
+.footer .lede {
+  margin-block-start: 1.5rem;
+  margin-block-end: 2rem;
+  width: 25ch;
+  line-height: 26px;
+  font-size: 1.125rem;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.visually-hidden {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
 }
 
 .flex-col-center {
