@@ -1,3 +1,5 @@
+@use '../abstracts' as *;
+
 .landing__page {
 
   &--one {
@@ -15,6 +17,7 @@
 
       .lede {
         margin-block-start: 1rem;
+        max-width: $text-width-compact;
       }
     }
 
@@ -25,10 +28,14 @@
     text-align: center;
 
     .content {
-      
+
       .heading__secondary {
         margin-block-start: 1.5rem;
         margin-block-end: 2rem;
+      }
+
+      .lede {
+        max-width: 45ch;
       }
     }
   }

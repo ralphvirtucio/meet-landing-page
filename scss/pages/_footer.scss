@@ -27,6 +27,10 @@
     left: 0;
     opacity: .2;
     z-index: -1;
+
+    @include breakpoint(medium) {
+      background-image: url('/assets/tablet/image-footer.jpg');
+    }
   }
 
 

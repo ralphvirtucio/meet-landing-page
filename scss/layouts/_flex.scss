@@ -1,4 +1,4 @@
-
+@use '../abstracts' as *;
 
 .flex-col-center {
   display: flex;
@@ -8,5 +8,10 @@
 
   &.cta {
     gap: 1rem;
+
+    @include breakpoint(medium) {
+      flex-direction: row;
+    }
+
   }
 }

@@ -203,6 +203,7 @@ select {
 }
 .landing__page--one .content .lede {
   margin-block-start: 1rem;
+  max-width: 40ch;
 }
 .landing__page--two {
   padding-inline: 1.5rem;
@@ -211,6 +212,9 @@ select {
 .landing__page--two .content .heading__secondary {
   margin-block-start: 1.5rem;
   margin-block-end: 2rem;
+}
+.landing__page--two .content .lede {
+  max-width: 45ch;
 }
 
 .footer {
@@ -237,6 +241,11 @@ select {
   left: 0;
   opacity: 0.2;
   z-index: -1;
+}
+@media (min-width: 48em) {
+  .footer::before {
+    background-image: url("/assets/tablet/image-footer.jpg");
+  }
 }
 .footer .lede {
   margin-block-start: 1.5rem;
@@ -273,6 +282,11 @@ body {
 .flex-col-center.cta {
   gap: 1rem;
 }
+@media (min-width: 48em) {
+  .flex-col-center.cta {
+    flex-direction: row;
+  }
+}
 
 .grid {
   display: grid;
@@ -283,6 +297,14 @@ body {
   row-gap: 1.5rem;
   column-gap: 1.5rem;
   margin-block-end: 4rem;
+}
+@media (min-width: 48em) {
+  .grid.features {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.grid.features li {
+  list-style: none;
 }
 .grid.features li img {
   border-radius: 8px;
