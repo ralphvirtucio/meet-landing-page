@@ -146,6 +146,88 @@ select {
   padding-inline: 2rem;
 }
 
+.features {
+  text-align: center;
+  padding-inline: 1.5rem;
+}
+.features .feature {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 1.5rem;
+  column-gap: 1.5rem;
+  margin-block-end: 4rem;
+}
+.features .feature li img {
+  border-radius: 8px;
+}
+.features .tag-line {
+  text-transform: uppercase;
+  color: #4D96A9;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+.features .content h3 {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  margin-block-start: 1.5rem;
+  margin-block-end: 2rem;
+  color: #28283D;
+  font-weight: 900;
+  line-height: clamp(2rem, 4vw, 3.5rem);
+}
+.features .content p {
+  color: #87879D;
+  font-size: clamp(1rem, 1vw, 1.125rem);
+  margin-block-end: 2rem;
+  font-weight: 500;
+}
+
+.footer {
+  text-align: center;
+  background-color: #4D96A9;
+  padding-inline: 1.5rem;
+  color: #FAFAFA;
+  height: 428px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+.footer::before {
+  content: "";
+  background: url("/assets/mobile/image-footer.jpg") no-repeat center center;
+  background-size: cover;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.2;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.footer h2 {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 700;
+  line-height: clamp(2rem, 4vw, 3.5rem);
+}
+.footer p {
+  margin-block-start: 1.5rem;
+  margin-block-end: 2rem;
+  font-size: clamp(1rem, 1vw, 1.125rem);
+  font-weight: 500;
+}
+.footer .btn-download {
+  background-color: #855FB1;
+}
+.footer .btn-download span {
+  color: #D9B8FF;
+}
+
 body {
   font-family: "Red Hat Display", sans-serif;
   display: flex;

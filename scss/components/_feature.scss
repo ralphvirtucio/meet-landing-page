@@ -1,0 +1,49 @@
+@use '../abstracts' as *;
+
+.features {
+  text-align: center;
+  padding-inline: 1.5rem;
+
+  .feature {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1.5rem;
+    column-gap: 1.5rem;
+    margin-block-end: 4rem;
+
+    li {
+      img {
+        border-radius: 8px;
+      }
+    }
+  }
+
+  .tag-line {
+    text-transform: uppercase;
+    color: $primary-color-1;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+  }
+
+  .content {
+    h3 {
+      font-size: clamp(2rem, 4vw, 3.5rem);
+      margin-block-start: 1.5rem;
+      margin-block-end: 2rem;
+      color: $primary-color-3;
+      font-weight: 900;
+      line-height: clamp(2rem, 4vw, 3.5rem);
+    }
+
+    p {
+      color: $neutral-color-1;
+      font-size: clamp(1rem, 1vw, 1.125rem);
+      margin-block-end: 2rem;
+      font-weight: 500;
+    }
+  }
+}

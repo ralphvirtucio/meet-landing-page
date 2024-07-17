@@ -1,0 +1,49 @@
+@use '../abstracts' as *;
+
+.footer {
+  text-align: center;
+  background-color: $primary-color-1;
+  padding-inline: 1.5rem;
+  color: $neutral-color-2;
+  height: 428px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    background: url('/assets/mobile/image-footer.jpg') no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.2;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  h2 {
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    font-weight: 700;
+    line-height: clamp(2rem, 4vw, 3.5rem);
+  }
+
+  p {
+    margin-block-start: 1.5rem;
+    margin-block-end: 2rem;
+    font-size: clamp(1rem, 1vw, 1.125rem);
+    font-weight: 500;
+  }
+
+  .btn-download {
+    background-color: $primary-color-2;
+
+    span {
+      color: $secondary-color-2;
+    }
+  }
+}
