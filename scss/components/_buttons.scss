@@ -1,18 +1,17 @@
 @use '../abstracts/' as *;
 
-.btn__link {
+
+.btn-links {
   text-decoration: none;
-  color: $neutral-color-1;
-  font-weight: 900;
+  color: #fff;
+  border-radius: 32px;
   display: inline-block;
-  color: $neutral-color-2;
-  line-height: $line-height-sm;
-  border-radius: 30px;
+  padding-block: 1rem;
+  font-weight: 700;
 }
 
-.btn__download {
+.btn-download {
   background-color: $primary-color-1;
-  padding-block: 1rem;
   padding-inline: 2.5rem;
 
   span {
@@ -20,18 +19,8 @@
   }
 }
 
-.footer {
-  .btn__download {
-    background-color: $primary-color-2;
-  }
-
-  span {
-    color: $secondary-color-2;
-  }
-}
-
-.btn__more-info {
+.btn-whatisit {
   background-color: $primary-color-2;
-  padding-inline: 2rem;
-  padding-block: 1rem;
+  padding-inline: 1.85rem;
+  margin-block-start: 1rem;
 }

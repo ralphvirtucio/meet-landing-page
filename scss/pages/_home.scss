@@ -1,0 +1,8 @@
+@use '../abstracts' as *;
+
+
+body {
+  font-family: $main-font;
+  display: flex;
+  flex-direction: column;
+}

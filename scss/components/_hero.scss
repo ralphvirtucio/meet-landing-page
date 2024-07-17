@@ -1,0 +1,37 @@
+@use '../abstracts' as *;
+
+
+.hero {
+
+  picture {
+    margin-block-end: 3rem;
+  }
+
+  &__img-right {
+    display: none;
+    @include breakpoint(medium) {
+      display: block;
+    }
+  }
+
+  h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    line-height: clamp(2.8rem, 5vw, 4rem);
+    color: $primary-color-3;
+    margin-block-end: 1rem;
+    font-weight: 900;
+  }
+
+  p {
+    color: $neutral-color-1;
+    font-size: clamp(1rem, 1vw, 1.125rem);
+    margin-block-end: 2rem;
+    font-weight: 500;
+  }
+
+  .content {
+    text-align: center;
+    width: 100%;
+    padding-inline: 2rem;
+  }
+}
