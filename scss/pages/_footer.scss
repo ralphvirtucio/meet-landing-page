@@ -15,12 +15,18 @@
   justify-content: center;
   margin-block-start: -5.75rem;
 
+  @include breakpoint(large) {
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: start;
+  }
 
   &::before {
     content: "";
     background-image: url('/assets/mobile/image-footer.jpg');
     position: absolute;
     background-size: cover;
+    background-position: center;
     top: 0;
     right: 0;
     bottom: 0;
@@ -30,6 +36,10 @@
 
     @include breakpoint(medium) {
       background-image: url('/assets/tablet/image-footer.jpg');
+    }
+
+    @include breakpoint(large) {
+      background-image: url('/assets/desktop/image-footer.jpg');
     }
   }
 

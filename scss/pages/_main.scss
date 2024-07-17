@@ -5,6 +5,16 @@
   &--one {
     text-align: center;
 
+    .img-hero__right {
+      display: none;
+    }
+
+    @include breakpoint(large) {
+      .img-hero__right {
+        display: block;
+      }
+    }
+
     .content {
       margin-block-start: 3.5rem;
       margin-block-end: 2rem;
