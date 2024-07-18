@@ -3,6 +3,8 @@
 .features {
   text-align: center;
   padding-inline: 1.5rem;
+  max-width: 85rem;
+  margin-inline: auto;
 
   .feature {
     list-style: none;
@@ -13,6 +15,10 @@
     row-gap: 1.5rem;
     column-gap: 1.5rem;
     margin-block-end: 4rem;
+
+    @include breakpoint(medium) {
+      grid-template-columns: repeat(4, 1fr);
+    }
 
     li {
       img {
@@ -30,16 +36,19 @@
   }
 
   .content {
+    
     h3 {
-      font-size: clamp(2rem, 4vw, 3.5rem);
+      font-size: clamp(2rem, 3vw, 3.5rem);
       margin-block-start: 1.5rem;
       margin-block-end: 2rem;
       color: $primary-color-3;
       font-weight: 900;
       line-height: clamp(2rem, 4vw, 3.5rem);
     }
-
+    
     p {
+      max-width: 45ch;
+      margin-inline: auto;
       color: $neutral-color-1;
       font-size: clamp(1rem, 1vw, 1.125rem);
       margin-block-end: 2rem;

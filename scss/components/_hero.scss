@@ -1,15 +1,30 @@
 @use '../abstracts' as *;
 
-
 .hero {
+
+  @include breakpoint(large) {
+    display: grid;
+  }
 
   picture {
     margin-block-end: 3rem;
+
+    
+  @include breakpoint(large) {
+    grid-row: 1;
+    grid-column: 1;
+
+    .hero__img-left {
+      width: 100%;
+
+    }
+  }
   }
 
   &__img-right {
     display: none;
-    @include breakpoint(medium) {
+
+    @include breakpoint(large) {
       display: block;
     }
   }
@@ -20,6 +35,8 @@
     color: $primary-color-3;
     margin-block-end: 1rem;
     font-weight: 900;
+    max-width: 10ch;
+    margin-inline: auto;
   }
 
   p {
@@ -27,11 +44,41 @@
     font-size: clamp(1rem, 1vw, 1.125rem);
     margin-block-end: 2rem;
     font-weight: 500;
+    max-width: 28rem;
+    margin-inline: auto;
   }
 
   .content {
     text-align: center;
-    width: 100%;
     padding-inline: 2rem;
+    padding-block-start: 3rem;
+    
+    
+    @include breakpoint(large) {
+      grid-row: 1;
+      grid-column: 2;
+    }
+  }
+
+
+  .hero__img-right {
+    @include breakpoint(large) {
+      grid-row: 1;
+      grid-column: 3;
+      width: 100%;
+    }
+  }
+
+  .step-indicator {
+    @include breakpoint(large) {
+      grid-row: 2;
+      grid-column: 2;
+    }
+  }
+
+  .cta {
+    .btn-download {
+      margin-inline-end: 1rem;
+    }
   }
 }

@@ -13,9 +13,18 @@
   position: relative;
   z-index: 1;
 
+
+  @include breakpoint(large) {
+    flex-direction: row;
+    text-align: start;
+    justify-content: space-around;
+  }
+ 
+
+
   &::before {
     content: "";
-    background: url('/assets/mobile/image-footer.jpg') no-repeat center center;
+    background: url('../../assets/mobile/image-footer.jpg') no-repeat center center;
     background-size: cover;
     position: absolute;
     z-index: -1;
@@ -24,15 +33,25 @@
     bottom: 0;
     left: 0;
     right: 0;
+
+    @include breakpoint(medium) {
+      background-image: url('../../assets/tablet/image-footer.jpg');
+    }
+    @include breakpoint(large) {
+      background-image: url('../../assets/desktop/image-footer.jpg');
+    }
   }
 
 
   
 
   h2 {
-    font-size: clamp(2rem, 4vw, 3.5rem);
+    font-size: clamp(2rem, 3vw, 3.5rem);
     font-weight: 700;
     line-height: clamp(2rem, 4vw, 3.5rem);
+    @include breakpoint(large) {
+      width: 12ch;
+    }
   }
 
   p {
@@ -40,11 +59,19 @@
     margin-block-end: 2rem;
     font-size: clamp(1rem, 1vw, 1.125rem);
     font-weight: 500;
+    @include breakpoint(large) {
+      width: 35ch;
+    }
   }
 
   .btn-download {
     background-color: $primary-color-2;
 
+    transition: background-color 0.3s;
+
+  &:hover {
+    background-color: $hovered-color-2;
+  }
     span {
       color: $secondary-color-2;
     }
