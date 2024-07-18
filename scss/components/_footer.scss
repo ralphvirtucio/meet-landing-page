@@ -24,7 +24,7 @@
 
   &::before {
     content: "";
-    background: url('/assets/mobile/image-footer.jpg') no-repeat center center;
+    background: url('./assets/mobile/image-footer.jpg') no-repeat center center;
     background-size: cover;
     position: absolute;
     z-index: -1;
@@ -35,10 +35,10 @@
     right: 0;
 
     @include breakpoint(medium) {
-      background-image: url('/assets/tablet/image-footer.jpg');
+      background-image: url('./assets/tablet/image-footer.jpg');
     }
     @include breakpoint(large) {
-      background-image: url('/assets/desktop/image-footer.jpg');
+      background-image: url('./assets/desktop/image-footer.jpg');
     }
   }
 
