@@ -227,7 +227,7 @@ select {
 .features {
   text-align: center;
   padding-inline: 1.5rem;
-  max-width: 85rem;
+  max-width: 65rem;
   margin-inline: auto;
 }
 .features .feature {
@@ -297,7 +297,7 @@ select {
 }
 .footer::before {
   content: "";
-  background: url("./assets/mobile/image-footer.jpg") no-repeat center center;
+  background: url("assets/mobile/image-footer.jpg") no-repeat center center;
   background-size: cover;
   position: absolute;
   z-index: -1;
@@ -309,12 +309,12 @@ select {
 }
 @media (min-width: 48em) {
   .footer::before {
-    background-image: url("./assets/tablet/image-footer.jpg");
+    background-image: url("assets/tablet/image-footer.jpg");
   }
 }
 @media (min-width: 62em) {
   .footer::before {
-    background-image: url("./assets/desktop/image-footer.jpg");
+    background-image: url("assets/desktop/image-footer.jpg");
   }
 }
 .footer h2 {
