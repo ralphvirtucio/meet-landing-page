@@ -6,3 +6,7 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+.sr-only {
+  @include sr-only;
+}

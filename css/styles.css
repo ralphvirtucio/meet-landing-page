@@ -179,7 +179,7 @@ select {
     display: block;
   }
 }
-.hero h1 {
+.hero h2 {
   font-size: clamp(2.5rem, 5vw, 4rem);
   line-height: clamp(2.8rem, 5vw, 4rem);
   color: #28283D;
@@ -198,13 +198,13 @@ select {
 }
 .hero .content {
   text-align: center;
-  padding-inline: 2rem;
-  padding-block-start: 3rem;
 }
 @media (min-width: 62em) {
   .hero .content {
     grid-row: 1;
     grid-column: 2;
+    padding-inline: 2rem;
+    padding-block-start: 3rem;
   }
 }
 @media (min-width: 62em) {
@@ -255,7 +255,7 @@ select {
   font-weight: 700;
   letter-spacing: 4px;
 }
-.features .content h3 {
+.features .content h4 {
   font-size: clamp(2rem, 3vw, 3.5rem);
   margin-block-start: 1.5rem;
   margin-block-end: 2rem;
@@ -353,6 +353,20 @@ body {
   font-family: "Red Hat Display", sans-serif;
   display: flex;
   flex-direction: column;
+}
+
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
 }
 
 /*# sourceMappingURL=styles.css.map */
