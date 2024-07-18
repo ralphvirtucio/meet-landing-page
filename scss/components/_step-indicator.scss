@@ -1,34 +1,33 @@
 @use '../abstracts' as *;
 
-// .step__indicator {
-//   background-color: white;
-//   border: 1px solid hsl(240deg 10% 57% / 25%);
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   color: $neutral-color-1;
-//   width: 50px;
-//   height: 50px;
-//   border-radius: 50%;
-//   padding: 1rem;
-//   position: relative;
-//   margin-block-start: 9.25rem;
-//   margin-block-end: 4rem;
-//   z-index: 2;
+.step-indicator {
+  background-color: #fff;
+  border: 1px solid hsl(240deg 10% 57% / 25%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-inline: auto;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-block-start: 9.25rem;
+  margin-block-end: 4rem;
+  z-index: 2;
+  position: relative;
 
-//   &::before {
-//     content: "";
-//     position: absolute;
-//     bottom: 100%;
-//     left: 23px;
-//     background-color: hsl(240deg 10% 57% / 25%);
-//     width: 1px;
-//     height: 84px;
-//     right: -23px;
-//   }
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 23px;
+    background-color: hsl(240deg 10% 57% / 25%);
+    width: 1px;
+    height: 84px;
+    right: -23px;
+  }
 
-//   em {
-//     font-style: normal;
-//     font-weight: 900;
-//   }
-// }
+  span {
+    font-weight: 900;
+    color: $neutral-color-1;
+  }
+}

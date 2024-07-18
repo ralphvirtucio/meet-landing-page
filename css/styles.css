@@ -110,6 +110,36 @@ select {
   margin-block-start: 1rem;
 }
 
+.step-indicator {
+  background-color: #fff;
+  border: 1px solid hsla(240, 10%, 57%, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-inline: auto;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-block-start: 9.25rem;
+  margin-block-end: 4rem;
+  z-index: 2;
+  position: relative;
+}
+.step-indicator::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 23px;
+  background-color: hsla(240, 10%, 57%, 0.25);
+  width: 1px;
+  height: 84px;
+  right: -23px;
+}
+.step-indicator span {
+  font-weight: 900;
+  color: #87879D;
+}
+
 .header {
   margin-inline: auto;
   margin-block-start: 2.9rem;
@@ -183,6 +213,9 @@ select {
   font-size: clamp(1rem, 1vw, 1.125rem);
   margin-block-end: 2rem;
   font-weight: 500;
+}
+.features .step-indicator {
+  margin-block-end: -1.5rem;
 }
 
 .footer {
