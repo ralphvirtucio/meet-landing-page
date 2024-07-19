@@ -48,9 +48,9 @@
   
 
   h2 {
-    font-size: clamp(2rem, 3vw, 3.5rem);
+    font-size: clamp(2rem, 2.5vw, 3.5rem);
     font-weight: 700;
-    line-height: clamp(2rem, 4vw, 3.5rem);
+    line-height: clamp(2rem, 2.5vw, 3.5rem);
     @include breakpoint(large) {
       width: 12ch;
     }

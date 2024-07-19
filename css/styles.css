@@ -227,23 +227,14 @@ select {
 .features {
   text-align: center;
   padding-inline: 1.5rem;
-  max-width: 85rem;
+  max-width: 65rem;
   margin-inline: auto;
 }
 .features .feature {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  row-gap: 1.5rem;
-  column-gap: 1.5rem;
   margin-block-end: 4rem;
-}
-@media (min-width: 48em) {
-  .features .feature {
-    grid-template-columns: repeat(4, 1fr);
-  }
 }
 .features .feature li img {
   border-radius: 8px;
@@ -320,9 +311,9 @@ select {
   }
 }
 .footer h2 {
-  font-size: clamp(2rem, 3vw, 3.5rem);
+  font-size: clamp(2rem, 2.5vw, 3.5rem);
   font-weight: 700;
-  line-height: clamp(2rem, 4vw, 3.5rem);
+  line-height: clamp(2rem, 2.5vw, 3.5rem);
 }
 @media (min-width: 62em) {
   .footer h2 {
@@ -355,6 +346,7 @@ body {
   font-family: "Red Hat Display", sans-serif;
   display: flex;
   flex-direction: column;
+  background-color: #FAFAFA;
 }
 
 .sr-only {
@@ -369,6 +361,25 @@ body {
   position: absolute !important;
   width: 1px !important;
   white-space: nowrap !important;
+}
+
+.grid.feature {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 1.5rem;
+  column-gap: 1.5rem;
+}
+@media (min-width: 48em) {
+  .grid.feature {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 0.7rem;
+  }
+}
+@media (min-width: 62em) {
+  .grid.feature {
+    margin-block-end: 5rem;
+    column-gap: 1.875rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
