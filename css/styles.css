@@ -271,7 +271,6 @@ select {
   background-color: #4D96A9;
   padding-inline: 1.5rem;
   color: #FAFAFA;
-  height: 428px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -285,7 +284,6 @@ select {
     flex-direction: row;
     text-align: start;
     justify-content: space-around;
-    height: 300px;
   }
 }
 .footer::before {
