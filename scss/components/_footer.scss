@@ -5,21 +5,21 @@
   background-color: $primary-color-1;
   padding-inline: 1.5rem;
   color: $neutral-color-2;
-  // height: 428px;
+  padding-block-start: 8rem;
+  padding-block-end: 6rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
   z-index: 1;
-  margin-block-start: auto;
 
 
   @include breakpoint(large) {
     flex-direction: row;
     text-align: start;
     justify-content: space-around;
-    // height: 300px;
+  
   }
  
 
@@ -48,9 +48,9 @@
   
 
   h2 {
-    font-size: clamp(2rem, 2.5vw, 3.5rem);
+    font-size: clamp(2rem, 2vw, 3.5rem);
     font-weight: 700;
-    line-height: clamp(2rem, 2.5vw, 3.5rem);
+    line-height: clamp(2rem, 2vw, 3.5rem);
     @include breakpoint(large) {
       width: 12ch;
     }

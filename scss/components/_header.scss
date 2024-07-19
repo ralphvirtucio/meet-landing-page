@@ -4,4 +4,13 @@
   margin-inline: auto;
   margin-block-start: 2.9rem;
   margin-block-end: 4rem;
+
+  
+  @include breakpoint(medium) {
+    margin-block-start: 3rem;
+  }
+
+  @include breakpoint(large) {
+    margin-block-start: 5rem;
+  }
 }

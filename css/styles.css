@@ -153,6 +153,16 @@ select {
   margin-block-start: 2.9rem;
   margin-block-end: 4rem;
 }
+@media (min-width: 48em) {
+  .header {
+    margin-block-start: 3rem;
+  }
+}
+@media (min-width: 62em) {
+  .header {
+    margin-block-start: 5rem;
+  }
+}
 
 @media (min-width: 62em) {
   .hero {
@@ -271,13 +281,14 @@ select {
   background-color: #4D96A9;
   padding-inline: 1.5rem;
   color: #FAFAFA;
+  padding-block-start: 8rem;
+  padding-block-end: 6rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
   z-index: 1;
-  margin-block-start: auto;
 }
 @media (min-width: 62em) {
   .footer {
@@ -309,9 +320,9 @@ select {
   }
 }
 .footer h2 {
-  font-size: clamp(2rem, 2.5vw, 3.5rem);
+  font-size: clamp(2rem, 2vw, 3.5rem);
   font-weight: 700;
-  line-height: clamp(2rem, 2.5vw, 3.5rem);
+  line-height: clamp(2rem, 2vw, 3.5rem);
 }
 @media (min-width: 62em) {
   .footer h2 {
