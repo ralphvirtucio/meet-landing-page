@@ -12,12 +12,14 @@
   align-items: center;
   position: relative;
   z-index: 1;
+  margin-block-start: auto;
 
 
   @include breakpoint(large) {
     flex-direction: row;
     text-align: start;
     justify-content: space-around;
+    height: 300px;
   }
  
 

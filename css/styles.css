@@ -227,7 +227,7 @@ select {
 .features {
   text-align: center;
   padding-inline: 1.5rem;
-  max-width: 65rem;
+  max-width: 85rem;
   margin-inline: auto;
 }
 .features .feature {
@@ -287,12 +287,14 @@ select {
   align-items: center;
   position: relative;
   z-index: 1;
+  margin-block-start: auto;
 }
 @media (min-width: 62em) {
   .footer {
     flex-direction: row;
     text-align: start;
     justify-content: space-around;
+    height: 300px;
   }
 }
 .footer::before {
