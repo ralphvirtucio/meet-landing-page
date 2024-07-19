@@ -295,6 +295,8 @@ select {
     flex-direction: row;
     text-align: start;
     justify-content: space-around;
+    padding-block-start: 10rem;
+    padding-block-end: 8rem;
   }
 }
 .footer::before {
